@@ -1,0 +1,21 @@
+{
+  "dart.flutterSdkPaths": [
+    "/Users/ivan/Developer/flutter_sdks/2_5_2/flutter/bin/"
+  ],
+  "cSpell.words": [
+    "dartz",
+    "nullsafety",
+    "riverpod"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.freezed.dart": false,
+    "**/*.g.dart": false,
+    "**/.gitkeep": false
+  },
+}

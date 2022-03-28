@@ -1,0 +1,15 @@
+include: package:lint/analysis_options.yaml
+
+#to select severity or ignore some rules
+analyzer:
+  errors:
+    missing_return: error
+    must_be_immutable: error #non final fields should be error
+    must_call_super: error
+    invalid_use_of_protected_member: error
+    parameter_assignments: error 
+    sort_unnamed_constructors_first: ignore
+    sort_pub_dependencies: ignore
+    require_trailing_commas: ignore
+    directives_ordering: ignore
+    eol_at_end_of_file: ignore

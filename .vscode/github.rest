@@ -1,0 +1,37 @@
+@baseurl = https://api.github.com
+@token = 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
+@acceptHeader = application/vnd.github.v3.html+json
+
+GET {{baseurl}}/user/starred
+  ?page=1
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+If-None-Match: W/"d4ed5350884fa7c1d784135dfc0c6412e6e9f01f40d58a29840d0e47c3303aa2"
+
+###
+GET {{baseurl}}/search/repositories
+  ?q=flutter
+  &page=1
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+GET {{baseurl}}/repos/flutter/flutter/readme
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+PUT {{baseurl}}/user/starred/dart-lang/sdk
+Authorization: bearer {{token}}
+Content-Length: 0
+Accept: {{acceptHeader}}
+
+###
+DELETE {{baseurl}}/user/starred/dart-lang/sdk
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
+
+###
+GET {{baseurl}}/user/starred/dart-lang/sdk
+Authorization: bearer {{token}}
+Accept: {{acceptHeader}}
